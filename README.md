@@ -39,9 +39,6 @@ Marwan Yasser Hassan Abdelghaffar
 License
 This project is open-source and free to use under the MIT License.
 
-markdown
-نسخ الكود
-
 ### **Step 4: Verify Responsiveness**
 1. Open your landing page in **Google Chrome**.
 2. Right-click and select **Inspect** > **Toggle Device Toolbar**.
