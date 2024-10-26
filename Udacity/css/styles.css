@@ -1,0 +1,176 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__menu li:hover, .navbar__menu li.active {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.navbar__menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hero.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero__content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f04e31;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d1402a;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 0;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.section:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #444;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__content p {
+        font-size: 1rem;
+    }
+}
+
