@@ -23,22 +23,6 @@ This project uses the following dependencies:
 - **Google Fonts**: Roboto font family. Included via CDN in `index.html`.
 - **JavaScript ES6**: Standard JavaScript without external libraries.
 - **CSS Media Queries**: For responsive design across different devices.
-
-## File Structure
-```plaintext
-project-folder/
-├── css/
-│   └── styles.css         # CSS file for styling
-├── js/
-│   └── app.js             # JavaScript file for functionality
-├── index.html             # Main HTML file
-└── README.md              # Project README file
-Author
-Marwan Yasser Hassan Abdelghaffar
-
-License
-This project is open-source and free to use under the MIT License.
-
 ### **Step 4: Verify Responsiveness**
 1. Open your landing page in **Google Chrome**.
 2. Right-click and select **Inspect** > **Toggle Device Toolbar**.
@@ -51,4 +35,15 @@ This project is open-source and free to use under the MIT License.
    - Each section is highlighted as you scroll.
    - The scroll-to-top button appears after scrolling down and works as expected.
 
-By following these steps, your project should meet all the specified requirements. Let me know if you need any further assistance!
+Your project should meet all the specified requirements if you follow these steps. Let me know if you need any further assistance!
+
+## File Structure
+```plaintext
+project-folder/
+├── css/
+│   └── styles.css         # CSS file for styling
+├── js/
+│   └── app.js             # JavaScript file for functionality
+├── index.html             # Main HTML file
+└── README.md              # Project README file
+
