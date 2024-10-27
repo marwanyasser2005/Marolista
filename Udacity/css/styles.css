@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 60px; /* Adjust according to the height of your navbar */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -79,9 +83,8 @@ p {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .hero__content h1 {
@@ -124,16 +127,12 @@ p {
 
 .section h2 {
     color: #333;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2rem; /* Adjusted for better mobile readability */
 }
 
 .section p {
     color: #666;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+    font-size: 1rem; /* Adjusted for better mobile readability */
 }
 
 /* Footer */
@@ -165,12 +164,11 @@ p {
 
 /* Responsive Styling */
 
-/* Tablets */
+/* Tablet view */
 @media (max-width: 768px) {
     .navbar__menu {
         flex-direction: column;
         gap: 10px;
-        padding: 10px 0;
     }
 
     .hero__content h1 {
@@ -179,6 +177,10 @@ p {
 
     .hero__content p {
         font-size: 1rem;
+    }
+
+    .section {
+        padding: 80px 0;
     }
 
     .section h2 {
@@ -190,45 +192,55 @@ p {
     }
 }
 
-/* Mobile Devices */
+/* Mobile view */
 @media (max-width: 480px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar__menu {
+        gap: 5px;
     }
 
     .hero {
-        height: 80vh;
-        padding: 20px;
+        padding: 0 10px;
+        height: 70vh;
     }
 
     .hero__content h1 {
         font-size: 2rem;
+        margin-bottom: 15px;
     }
 
     .hero__content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 
     .btn {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
     }
 
     .section {
-        padding: 50px 0;
+        padding: 60px 0;
     }
 
     .section h2 {
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .section p {
-        font-size: 0.9rem;
+        font-size: 0.875rem;
     }
 
-    .footer {
-        padding: 15px 0;
-        font-size: 0.9rem;
+    .scroll-to-top {
+        padding: 8px 15px;
+        font-size: 0.875rem;
     }
 }
