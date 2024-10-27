@@ -79,10 +79,9 @@ p {
     height: 100vh;
     display: flex;
     align-items: center;
-}
-
-.hero__content {
+    justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .hero__content h1 {
@@ -125,10 +124,16 @@ p {
 
 .section h2 {
     color: #333;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .section p {
     color: #666;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Footer */
@@ -159,10 +164,13 @@ p {
 }
 
 /* Responsive Styling */
+
+/* Tablets */
 @media (max-width: 768px) {
     .navbar__menu {
         flex-direction: column;
         gap: 10px;
+        padding: 10px 0;
     }
 
     .hero__content h1 {
@@ -172,5 +180,55 @@ p {
     .hero__content p {
         font-size: 1rem;
     }
+
+    .section h2 {
+        font-size: 1.75rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
 }
 
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 80vh;
+        padding: 20px;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+    }
+
+    .hero__content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
