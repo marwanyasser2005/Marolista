@@ -1,6 +1,7 @@
-// References to important elements
+// Get references to important elements
 const sections = document.querySelectorAll('section');
 const navList = document.getElementById('navbar__list');
+const navbar = document.querySelector('.header');  // Reference to the navbar
 const scrollToTopButton = document.getElementById('scrollToTop');
 
 // Dynamically build the navigation menu
@@ -11,10 +12,17 @@ sections.forEach(section => {
     navLink.href = `#${section.id}`;
     navItem.appendChild(navLink);
     
-    // Smooth scroll when clicking nav links
+    // Smooth scroll with offset when clicking nav links
     navLink.addEventListener('click', (e) => {
         e.preventDefault();
-        section.scrollIntoView({ behavior: 'smooth' });
+        
+        const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = sectionPosition - navbar.offsetHeight; // Adjust for navbar height
+        
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     });
 
     navList.appendChild(navItem);
